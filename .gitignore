@@ -1,0 +1,14 @@
+# Ignore R.ls output files
+R.ls.*.txt
+.CTR.*
+ssh-keygen.txt
+Codebase*.txt
+codebase*.txt
+
+# Ignore temporary files created by scripts
+*.tmp.*
+
+# Ignore OS-specific files (optional but good practice)
+.DS_Store
+Thumbs.db
+
