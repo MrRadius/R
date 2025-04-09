@@ -1,2 +1,0 @@
-# PUB
-Publicly accessible files
