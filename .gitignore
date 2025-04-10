@@ -12,3 +12,4 @@ codebase*.txt
 .DS_Store
 Thumbs.db
 
+*.sh.bak
