@@ -1,4 +1,29 @@
 #!/bin/bash
+
+# --- Help Flag Handling --- 
+if [[ "$1" == "--h" ]]; then
+    cat << EOF
+
+Usage: $(basename "$0") [options] [arguments]
+
+
+
+Options:
+
+  --h    Display this help message and exit.
+
+
+
+Arguments:
+
+
+
+EOF
+    exit 0
+fi
+# --- End Help Flag Handling ---
+
+
 #CTR (01) [UTC-2025-04-09-00=06-51] ./R.ls.sh [Summary: ] [Next steps: ] [Notes: ]
 
 timestamp=$(date -u +"%Y-%m-%d-%H=%M-%S")

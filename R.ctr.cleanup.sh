@@ -1,4 +1,32 @@
 #!/bin/bash
+
+# --- Help Flag Handling --- 
+if [[ "$1" == "--h" ]]; then
+    cat << EOF
+
+Usage: $(basename "$0") [options] [arguments]
+
+
+
+Options:
+
+  --h    Display this help message and exit.
+
+
+
+Arguments:
+
+    [target]    Specify the target file or directory to clean up. Default is the current directory (".").
+    -r, --recursive    Recursively process directories.
+    -e, --exclude <pattern>    Exclude files/directories matching the specified pattern.
+    --h                Display this help message and exit.
+
+EOF
+    exit 0
+fi
+# --- End Help Flag Handling ---
+
+
 #CTR (01) [UTC-2025-04-09-00=06-51] ./R.ctr.cleanup.sh [Summary: ] [Next steps: ] [Notes: ]
 
 # --- Default Configuration ---
